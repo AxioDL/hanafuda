@@ -31,9 +31,9 @@ redeclaring the classes, functions and variables.
 
 ### Installing From Packages
 
-Hanafuda may be installed alongside an existing LLVM toolchain. The package is
-uniquely identified with `AxioDL` as vendor and `ProgramFiles/llvm-hanafuda` or
-`opt/hanafuda` as install prefix.
+Hanafuda may be installed alongside an existing LLVM toolchain or on its own.
+The package is uniquely identified with `AxioDL` as vendor and 
+`ProgramFiles/llvm-hanafuda` or `opt/hanafuda` as install prefix.
 
 #### Windows 7+
 
@@ -123,6 +123,7 @@ int patched_main(int argc, char** argv) {
 
 // patch_dol() be within extern "C" {} when patching C-linked symbols.
 #pragma patch_dol(int main(int,char**), int patched_main(int,char**))
+
 }
 ```
 
