@@ -37,7 +37,7 @@ The package is uniquely identified with `AxioDL` as vendor and
 
 #### Windows 7+
 
-[llvm-hanafuda-4.0.0svn-win64.exe](https://github.com/AxioDL/hanafuda/releases/llvm-hanafuda-4.0.0svn-win64.exe).
+[llvm-hanafuda-4.0.0svn-win64.exe](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0.0svn-win64.exe).
 
 Windows 7 users may need the
 [v14 Visual C++ runtime](https://www.microsoft.com/en-us/download/details.aspx?id=53840)
