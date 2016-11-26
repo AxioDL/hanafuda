@@ -1,4 +1,4 @@
-### Hanafuda
+## Hanafuda
 
 **Hanafuda** is a special-purpose compiler toolchain for *directly* patching
 [DOL executable files](http://wiibrew.org/wiki/DOL) deployed on the Nintendo
@@ -29,13 +29,13 @@ assembled into a list file of the form:
 Game modders may distribute this list in a modding kit along with header files
 redeclaring the classes, functions and variables.
 
-#### Installing From Packages
+### Installing From Packages
 
 Hanafuda may be installed alongside an existing LLVM toolchain. The package is
 uniquely identified with `AxioDL` as vendor and `ProgramFiles/llvm-hanafuda` or
 `opt/hanafuda` as install prefix.
 
-##### Windows 7+
+#### Windows 7+
 
 [llvm-hanafuda-4.0.0svn-win64.exe](https://github.com/AxioDL/hanafuda/releases/llvm-hanafuda-4.0.0svn-win64.exe).
 
@@ -43,15 +43,15 @@ Windows 7 users may need the
 [v14 Visual C++ runtime](https://www.microsoft.com/en-us/download/details.aspx?id=53840)
 if not already installed.
 
-##### macOS 10.9+
+#### macOS 10.9+
 
 [llvm-hanafuda-4.0.0svn-x86_64-apple-darwin.tar.gz](https://github.com/AxioDL/hanafuda/releases/llvm-hanafuda-4.0.0svn-x86_64-apple-darwin.tar.gz).
 
-##### Arch Linux
+#### Arch Linux
 
 [llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz](https://github.com/AxioDL/hanafuda/releases/llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz).
 
-#### Building From Source
+### Building From Source
 
 Hanafuda uses a CMake cache-based method for configuring the toolchain build.
 
@@ -80,7 +80,7 @@ ninja package
 The LLVM website has a [plethora of documentation](http://llvm.org/docs/CMake.html)
 on fine-tuning the build for your host system.
 
-#### Using Hanafuda
+### Using Hanafuda
 
 `hanafuda` and `hanafuda++` work just like the `clang` and `clang++` drivers
 (which work much like `gcc` and `g++`).
@@ -98,7 +98,7 @@ Here's an example:
 hanafuda++ -o patched_boot.dol --hanafuda-base-dol=RippedGame/boot.dol --hanafuda-dol-symbol-list=GamePatchingKit/GameSymbols.lst -I GamePatchingKit/include patch.cpp
 ```
 
-#### Defining Patches
+### Defining Patches
 
 With hanafuda, patches are defined from within the source itself using
 `#pragma patch_dol(old_decl, new_decl)`. Any references to `old_decl` in the ripped
@@ -126,7 +126,7 @@ int patched_main(int argc, char** argv) {
 }
 ```
 
-#### Verbose Feedback
+### Verbose Feedback
 
 To see actions taken by the hanafuda linker, add `-Xlinker -verbose` to the
 command-line.
