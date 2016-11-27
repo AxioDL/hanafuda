@@ -49,7 +49,7 @@ if not already installed.
 
 #### Arch Linux
 
-[llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz)
+[llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0-1-x86_64-archlinux.pkg.tar.xz)
 
 ```sh
 sudo pacman -U llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz
