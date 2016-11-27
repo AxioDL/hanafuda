@@ -51,6 +51,10 @@ if not already installed.
 
 [llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz](https://github.com/AxioDL/hanafuda/releases/llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz).
 
+```sh
+# pacman -U llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz
+```
+
 ### Building From Source
 
 Hanafuda uses a CMake cache-based method for configuring the toolchain build.
