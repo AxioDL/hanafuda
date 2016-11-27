@@ -45,14 +45,14 @@ if not already installed.
 
 #### macOS 10.9+
 
-[llvm-hanafuda-4.0.0svn-x86_64-apple-darwin.tar.gz](https://github.com/AxioDL/hanafuda/releases/llvm-hanafuda-4.0.0svn-x86_64-apple-darwin.tar.gz).
+[llvm-hanafuda-4.0.0svn-Darwin.tar.xz](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0.0svn-Darwin.tar.xz).
 
 #### Arch Linux
 
-[llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz](https://github.com/AxioDL/hanafuda/releases/llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz).
+[llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz).
 
 ```sh
-# pacman -U llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz
+sudo pacman -U llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz
 ```
 
 ### Building From Source
@@ -125,7 +125,7 @@ int patched_main(int argc, char** argv) {
     return ret;
 }
 
-// patch_dol() be within extern "C" {} when patching C-linked symbols.
+// patch_dol() must be within extern "C" {} when patching C-linked symbols.
 #pragma patch_dol(int main(int,char**), int patched_main(int,char**))
 
 }
