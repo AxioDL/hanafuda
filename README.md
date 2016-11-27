@@ -37,7 +37,7 @@ The package is uniquely identified with `AxioDL` as vendor and
 
 #### Windows 7+
 
-[llvm-hanafuda-4.0.0svn-win64.exe](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0.0svn-win64.exe).
+[llvm-hanafuda-4.0.0svn-win64.exe](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0.0svn-win64.exe)
 
 Windows 7 users may need the
 [v14 Visual C++ runtime](https://www.microsoft.com/en-us/download/details.aspx?id=53840)
@@ -45,11 +45,11 @@ if not already installed.
 
 #### macOS 10.9+
 
-[llvm-hanafuda-4.0.0svn-Darwin.tar.xz](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0.0svn-Darwin.tar.xz).
+[llvm-hanafuda-4.0.0svn-Darwin.tar.xz](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0.0svn-Darwin.tar.xz)
 
 #### Arch Linux
 
-[llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz).
+[llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz](https://github.com/AxioDL/hanafuda/releases/download/v4.0.0/llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz)
 
 ```sh
 sudo pacman -U llvm-hanafuda-4.0-1-x86_64.pkg.tar.xz
