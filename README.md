@@ -33,9 +33,9 @@ redeclaring the classes, functions and variables.
 
 Hanafuda is essentially 99.9% LLVM + Clang + LLD. Specific changes include:
 
-* Support Macintosh (Classic era) [C++ ABI symbol mangling](https://github.com/AxioDL/clang/blob/hanafuda/lib/AST/MacintoshMangle.cpp)
-* Merge and update [Tilka's paired-singles branch](https://github.com/Tilka/llvm-ppc750cl)
-* Entirely custom [Hanafuda LLD Driver](https://github.com/AxioDL/lld/blob/hanafuda/ELF/HanafudaDriver.cpp)
+* Support Macintosh (Classic era) [C++ ABI symbol mangling](https://github.com/AxioDL/clang/blob/hanafuda/lib/AST/MacintoshMangle.cpp).
+* Merge and update [Tilka's paired-singles branch](https://github.com/Tilka/llvm-ppc750cl).
+* Entirely custom [Hanafuda LLD Driver](https://github.com/AxioDL/lld/blob/hanafuda/ELF/HanafudaDriver.cpp).
 * PPC-EABI target with [small data section allocation](https://reviews.llvm.org/D26344).
 
 ### Installing From Packages
