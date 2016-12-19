@@ -113,6 +113,21 @@ Here's an example:
 hanafuda++ -o patched_boot.dol --hanafuda-base-dol=RippedGame/boot.dol --hanafuda-dol-symbol-list=GamePatchingKit/GameSymbols.lst -I GamePatchingKit/include patch.cpp
 ```
 
+### Build Automation With CMake
+
+This repository includes a [CMake toolchain file](https://github.com/AxioDL/hanafuda/blob/master/HanafudaToolchain.cmake)
+enabling a patching project to use CMake to generate build files.
+
+In this example `CMakeLists.txt`, `HanafudaToolchain.cmake` has been downloaded to the same directory:
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+set(CMAKE_TOOLCHAIN_FILE HanafudaToolchain.cmake)
+project(hanafuda-test)
+include_directories(PatchingKit/include)
+add_hanafuda_executable(hanafuda-test RippedGame/boot.dol PatchingKit/symbols.lst test.cpp)
+```
+
 ### Defining Patches
 
 With hanafuda, patches are defined from within the source itself using
