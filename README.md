@@ -118,7 +118,7 @@ hanafuda++ -o patched_boot.dol --hanafuda-base-dol=RippedGame/boot.dol --hanafud
 This repository includes a [CMake toolchain file](https://github.com/AxioDL/hanafuda/blob/master/HanafudaToolchain.cmake)
 enabling a patching project to use CMake to generate build files.
 
-In this example `CMakeLists.txt`, `HanafudaToolchain.cmake` has been downloaded to the same directory:
+In this example `CMakeLists.txt`, [`HanafudaToolchain.cmake`](https://raw.githubusercontent.com/AxioDL/hanafuda/master/HanafudaToolchain.cmake) has been downloaded to the same directory:
 
 ```cmake
 cmake_minimum_required(VERSION 3.0)
